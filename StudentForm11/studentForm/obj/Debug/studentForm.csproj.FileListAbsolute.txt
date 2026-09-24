@@ -1,0 +1,11 @@
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\bin\Debug\studentForm.exe.config
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\bin\Debug\studentForm.exe
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\bin\Debug\studentForm.pdb
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\obj\Debug\studentForm.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\obj\Debug\studentForm.Form1.resources
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\obj\Debug\studentForm.Properties.Resources.resources
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\obj\Debug\studentForm.csproj.GenerateResource.cache
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\obj\Debug\studentForm.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\obj\Debug\studentForm.exe
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\obj\Debug\studentForm.pdb
+C:\Users\hp\Desktop\stdform\studentForm\studentForm\obj\Debug\studentForm.exe.config
