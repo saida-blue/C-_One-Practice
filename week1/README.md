@@ -21,7 +21,7 @@ Variables store the student's information:
 - "int studentid" → Student ID
 - "=" → assigns a value
 
-![Creating Variables](screenshots/creating_variable.png)
+![Creating Variables](screenshots/creating%20variable.png)
 
 2. Getting Data from TextBoxes
 
