@@ -21,7 +21,7 @@ Variables store the student's information:
 - "int studentid" → Student ID
 - "=" → assigns a value
 
-"Creating Variables" (screenshots/creating_variable.png)
+![Creating Variables](screenshots/creating_variable.png)
 
 2. Getting Data from TextBoxes
 
@@ -47,8 +47,7 @@ The "+" operator combines the student's information.
 - "lbloutput.Text" → displays the result
 - "name", "department", "semester", "studentid" → information displayed
 - "+" → joins the values
-
-"Concatenation" (screenshots/concatination.png)
+![Concatenation](screenshots/concatination.png)
 
 5. Clearing
 
@@ -60,7 +59,7 @@ txtdepartment.Clear();
 txtsemester.Text = string.Empty;
 lbloutput.Text = string.Empty;
 
-"Clearing" (screenshots/clearing.png)
+![Clearing](screenshots/clearing.png)
 
 6. Exit
 
