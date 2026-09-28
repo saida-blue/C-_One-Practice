@@ -1,554 +1,328 @@
-Chapter 2 – Processing Data (C#)
+# Chapter 2 – Processing Data (C#)
 
-This repository contains my practice from Chapter 2: Processing Data in Starting Out with Visual C#, Sixth Edition.
+This repository contains my practice work from **Chapter 2: Processing Data** in *Starting Out with Visual C#, Sixth Edition*. The chapter introduces essential programming concepts used in C# Windows Forms applications, including variables, data types, calculations, exception handling, and debugging techniques.
 
-Contents
+## Topics Covered
 
 - TextBox and the Text property
 - Variables and scope
 - String variables and concatenation
 - Numeric data types
-- Type casting and "var"
+- Type casting and `var`
 - Calculations and integer division
 - Parsing numeric input
-- "ToString()" and formatting
+- `ToString()` and formatting
 - Exception handling
 - Named constants
 - Fields
-- The "Math" class
-- Windows Forms GUI details
+- The `Math` class
+- Windows Forms GUI features
 - Debugging and breakpoints
 
 ---
 
-1. The Text Property
+## Screenshots and Explanations
 
-"Text Property" (Week2/01_text_property.png)
+### 1. The Text Property
 
-textBox1.Text = "Hello";
+Week2/01_text_property.png
 
-textBox1.Text = string.Empty;
-
-textBox1.Clear();
-
-textBox1.Text = "";
-
-Explanation:
-The "Text" property stores the text inside a TextBox. "Clear()" or an empty string can be used to remove the text.
+**Explanation:**  
+The `Text` property is used to store, retrieve, and modify the text contained in a TextBox control. It is one of the most commonly used properties in Windows Forms applications. Text can be removed by assigning an empty string, using `string.Empty`, or calling the `Clear()` method.
 
 ---
 
-2. Declaring Variables
+### 2. Declaring Variables
 
-"Variables" (Week2/02_variables.png)
+Week2/02_variables.png
 
-DataType VariableName;
-
-Explanation:
-A variable is a storage location in memory. The data type tells C# what kind of value the variable can store.
+**Explanation:**  
+Variables are named storage locations in memory that hold data while a program is running. Each variable must be declared with a data type that determines what type of information it can store.
 
 ---
 
-3. String Variables
+### 3. String Variables
 
-"String Variables" (Week2/03_string_variables.png)
+Week2/03_string_variables.png
 
-productDescription = "Jamhuuriya University";
-
-productLabel = productDescription;
-
-MessageBox.Show(productDescription);
-
-Explanation:
-A "string" stores characters and text. The value is written inside double quotation marks.
+**Explanation:**  
+A string variable stores textual information such as names, descriptions, and messages. String values are enclosed in double quotation marks and can be displayed in controls such as Labels, TextBoxes, and MessageBoxes.
 
 ---
 
-4. String Concatenation
+### 4. String Concatenation
 
-"String Concatenation" (Week2/04_string_concatenation.png)
+Week2/04_string_concatenation.png
 
-12 + " apples";
-
-"Total is " + 25.75;
-
-Explanation:
-Concatenation means joining values together. The "+" operator is used to join strings with other values.
+**Explanation:**  
+Concatenation is the process of joining two or more values together. In C#, the `+` operator is used to combine strings with other strings or numeric values.
 
 ---
 
-5. Declaring Variables Before Using Them
+### 5. Declaring Variables Before Using Them
 
-"Declaring Variables" (Week2/05_declaring_variables.png)
+Week2/05_declaring_variables.png
 
-string fullName;
-
-fullName = firstNameTextBox.Text + " " + lastNameTextBox.Text;
-
-fullNameLabel.Text = fullName;
-
-Explanation:
-A variable can be declared first and assigned a value later.
+**Explanation:**  
+Variables can be declared first and assigned values later. This approach helps improve program organization and readability.
 
 ---
 
-6. Local Variables and Scope
+### 6. Local Variables and Scope
 
-"Local Variables and Scope" (Week2/06_local_variables_scope.png)
+Week2/06_local_variables_scope.png
 
-private void firstButton_Click(object sender, EventArgs e)
-{
-    string myName;
-    myName = nameTextBox.Text;
-}
-
-Explanation:
-A local variable belongs to the method where it is declared. Other methods cannot directly access that local variable.
+**Explanation:**  
+A local variable exists only within the method where it is declared. Other methods cannot access that variable directly, which helps maintain proper program structure and prevents unintended modifications.
 
 ---
 
-7. Initializing Variables
+### 7. Initializing Variables
 
-"Initializing Variables" (Week2/07_initializing_variables.png)
+Week2/07_initializing_variables.png
 
-string productDescription;
-
-MessageBox.Show(productDescription);
-
-Explanation:
-A local variable must be assigned a value before it is used. Otherwise, the C# compiler reports an error.
+**Explanation:**  
+Local variables must be assigned a value before they can be used. Attempting to use an uninitialized variable results in a compiler error because C# cannot determine its value.
 
 ---
 
-8. Multiple Variables
+### 8. Multiple Variables
 
-"Multiple Variables" (Week2/08_multiple_variables.png)
+Week2/08_multiple_variables.png
 
-string lastName, firstName, middleName;
-
-Another example:
-
-string lastName = "Khalaf",
-       firstName = "Mohamed",
-       middleName = "Abdullahi";
-
-Explanation:
-Multiple variables of the same data type can be declared in one statement.
+**Explanation:**  
+C# allows several variables of the same data type to be declared in a single statement. This can reduce repetitive code and improve readability.
 
 ---
 
-9. Numeric Literals
+### 9. Numeric Literals
 
-"Numeric Literals" (Week2/09_numeric_literals.png)
+Week2/09_numeric_literals.png
 
-int hoursWorked = 40;
-
-double temperature = 87.6;
-
-decimal payRate = 28.75m;
-
-Explanation:
-Numeric literals are numbers written directly in the program. The "m" suffix identifies a decimal literal.
+**Explanation:**  
+Numeric literals are values written directly in source code. Different data types such as `int`, `double`, and `decimal` are used depending on the nature and precision of the value being stored.
 
 ---
 
-10. Assignment Compatibility
+### 10. Assignment Compatibility
 
-"Assignment Compatibility" (Week2/10_assignment_compatibility.png)
+Week2/10_assignment_compatibility.png
 
-int hoursWorked = 40;       // This works
-int unitsSold = 650m;       // ERROR!
-int score = -25.5;          // ERROR!
-
-Explanation:
-An "int" variable can store integer values. A "double" or "decimal" value cannot be assigned directly to an "int".
+**Explanation:**  
+When assigning values to variables, the value must be compatible with the variable's data type. Incompatible assignments result in compiler errors.
 
 ---
 
-11. Decimal Assignment Compatibility
+### 11. Decimal Assignment Compatibility
 
-"Decimal Compatibility" (Week2/11_decimal_compatibility.png)
+Week2/11_decimal_compatibility.png
 
-decimal balance = 9280.73m;  // This works
-
-decimal price = 50;          // This works
-
-decimal sales = 6500.0;      // ERROR!
-
-Explanation:
-A "decimal" variable can accept decimal and integer values, but not a "double" value directly.
+**Explanation:**  
+The `decimal` data type is commonly used in financial calculations because it provides higher precision. Integer values can be assigned directly, while some other numeric types require conversion.
 
 ---
 
-12. Type Casting
+### 12. Type Casting
 
-"Type Casting" (Week2/12_type_casting.png)
+Week2/12_type_casting.png
 
-int wholeNumber;
-
-decimal moneyNumber = 4500m;
-
-wholeNumber = (int)moneyNumber;
-
-Another example:
-
-double realNumber;
-
-decimal moneyNumber = 625.70m;
-
-realNumber = (double)moneyNumber;
-
-Explanation:
-Type casting explicitly converts a value from one data type to another.
+**Explanation:**  
+Type casting converts a value from one data type to another. Explicit casting is necessary when there is a possibility of losing information or precision during conversion.
 
 ---
 
-13. The "var" Keyword
+### 13. The var Keyword
 
-"var Keyword" (Week2/13_var_keyword.png)
+Week2/13_var_keyword.png
 
-var interestRate = 12.0;
-
-var stockCode = "D465U";
-
-var accountBalance = 1000.0m;
-
-Explanation:
-"var" allows the compiler to determine the variable's type from the value assigned to it.
+**Explanation:**  
+The `var` keyword allows the compiler to determine a variable's data type automatically based on the assigned value while still maintaining strong typing.
 
 ---
 
-14. Performing Calculations
+### 14. Performing Calculations
 
-"Calculations" (Week2/14_calculations.png)
+Week2/14_calculations.png
 
-int x = 5;
-int y = 4;
-
-Explanation:
-C# uses arithmetic operators such as "+", "-", "*", "/", and "%" to perform calculations.
+**Explanation:**  
+Arithmetic operators such as `+`, `-`, `*`, `/`, and `%` are used to perform mathematical calculations in C# applications.
 
 ---
 
-15. Rules for Performing Calculations
+### 15. Rules for Performing Calculations
 
-"Calculation Rules" (Week2/15_calculation_rules.png)
+Week2/15_calculation_rules.png
 
-int x = 5, y = 4;
-
-MessageBox.Show((x + y).ToString());
-
-Another example:
-
-result = (a + b) / 4;
-
-Explanation:
-C# follows the normal order of operations. Parentheses can be used to control which calculation happens first.
+**Explanation:**  
+C# follows the standard order of operations. Parentheses can be used to control the order in which calculations are performed.
 
 ---
 
-16. Integer Division
+### 16. Integer Division
 
-"Integer Division" (Week2/16_integer_division.png)
+Week2/16_integer_division.png
 
-int x = 7, y = 3;
-
-MessageBox.Show((x / y).ToString());
-
-The result is:
-
-2
-
-To get a fractional result:
-
-int x = 7, y = 3;
-
-MessageBox.Show(((double)x / y).ToString());
-
-Explanation:
-Dividing two integers produces an integer result. Casting one value to "double" allows a fractional result.
+**Explanation:**  
+When two integer values are divided, the fractional portion of the result is discarded. Casting one operand to `double` allows a decimal result to be produced.
 
 ---
 
-17. Parsing Numeric Input
+### 17. Parsing Numeric Input
 
-"Parse Numeric Input" (Week2/17_parse_numeric_input.png)
+Week2/17_parse_numeric_input.png
 
-int hoursWorked = int.Parse(hoursWorkedTextBox.Text);
-
-double temperature = double.Parse(temperatureTextBox.Text);
-
-Explanation:
-TextBox input is treated as a string. "Parse()" converts the string into a numeric value.
+**Explanation:**  
+User input from a TextBox is stored as a string. Methods such as `int.Parse()` and `double.Parse()` convert the text into numeric values that can be used in calculations.
 
 ---
 
-18. Displaying Numeric Values
+### 18. Displaying Numeric Values
 
-"ToString" (Week2/18_numeric_output_tostring.png)
+Week2/18_numeric_output_tostring.png
 
-decimal grossPay = 1550.0m;
-
-grossPayLabel.Text = grossPay.ToString();
-
-int myNumber = 123;
-
-MessageBox.Show(myNumber.ToString());
-
-Explanation:
-"ToString()" converts a numeric value into text so it can be displayed in a Label, TextBox, or MessageBox.
+**Explanation:**  
+The `ToString()` method converts a numeric value into text so that it can be displayed in controls such as Labels, TextBoxes, and MessageBoxes.
 
 ---
 
-19. String Conversion with "+"
+### 19. String Conversion
 
-"String Conversion" (Week2/19_string_conversion.png)
+Week2/19_string_conversion.png
 
-int idNumber = 1044;
-
-string output = "Your ID number is " + idNumber;
-
-Explanation:
-The "+" operator can also combine a string and a numeric value.
+**Explanation:**  
+When a string is combined with a numeric value using the `+` operator, C# automatically converts the number into text.
 
 ---
 
-20. Formatting Numbers
+### 20. Formatting Numbers
 
-"ToString Formatting" (Week2/20_tostring_formatting.png)
+Week2/20_tostring_formatting.png
 
-Examples from the chapter:
-
-ToString("n3")
-ToString("f2")
-ToString("e3")
-ToString("C")
-ToString("P")
-
-Explanation:
-Format strings control how numbers are displayed, such as number, fixed-point, currency, and percentage formats.
+**Explanation:**  
+Format specifiers such as `C`, `P`, `N`, and `F` control how numbers are displayed and allow values to appear as currency, percentages, or decimal numbers.
 
 ---
 
-21. "try-catch"
+### 21. Try-Catch
 
-"Try Catch" (Week2/21_try_catch.png)
+Week2/21_try_catch.png
 
-try
-{
-    statement;
-    statement;
-}
-catch
-{
-    statement;
-    statement;
-}
-
-Explanation:
-The "try" block contains code that may cause an exception. The "catch" block handles the error.
+**Explanation:**  
+The `try-catch` statement is used to handle exceptions. Code that might cause an error is placed inside the `try` block, while the `catch` block handles any exceptions that occur.
 
 ---
 
-22. Throwing an Exception
+### 22. Exception Handling Example
 
-"Throwing Exception" (Week2/22_throwing_exception.png)
+Week2/22_throwing_exception.png
 
-try
-{
-    double miles;
-    double gallons;
-    double mpg;
-
-    miles = double.Parse(milesTextBox.Text);
-    gallons = double.Parse(gallonsTextBox.Text);
-
-    mpg = miles / gallons;
-
-    mpgLabel.Text = mpg.ToString();
-}
-catch
-{
-    MessageBox.Show("Invalid data was entered.");
-}
-
-Explanation:
-If invalid numeric data is entered, an exception can occur. The program then moves to the "catch" block.
+**Explanation:**  
+Exceptions can occur when users enter invalid data or when unexpected conditions arise. Proper exception handling prevents the application from crashing.
 
 ---
 
-23. Displaying an Exception Message
+### 23. Displaying an Exception Message
 
-"Exception Message" (Week2/23_exception_message.png)
+Week2/23_exception_message.png
 
-try
-{
-    statement;
-}
-catch (Exception ex)
-{
-    MessageBox.Show(ex.Message);
-}
-
-Explanation:
-The "Message" property contains a description of the exception.
+**Explanation:**  
+The `Exception.Message` property contains information describing the error that occurred, helping both users and developers understand the issue.
 
 ---
 
-24. Named Constants
+### 24. Named Constants
 
-"Named Constants" (Week2/24_named_constants.png)
+Week2/24_named_constants.png
 
-const double INTEREST_RATE = 0.129;
-
-Explanation:
-A constant represents a value that cannot be changed during program execution.
+**Explanation:**  
+Constants store values that do not change while a program is running. They improve code readability and make maintenance easier.
 
 ---
 
-25. Fields
+### 25. Fields
 
-"Fields" (Week2/25_fields.png)
+Week2/25_fields.png
 
-private string name = "Charles";
-
-Explanation:
-A field is declared inside the class but outside a method. Its scope is the entire class.
+**Explanation:**  
+Fields are variables declared at the class level rather than inside methods. They are accessible throughout the class and can maintain values between method calls.
 
 ---
 
-26. Field Demo Application
+### 26. Field Demo Application
 
-"Field Demo Application" (Week2/26_field_demo_application.png)
+Week2/26_field_demo_application.png
 
-private string name = "Charles";
-
-private void showNameButton_Click(object sender, EventArgs e)
-{
-    MessageBox.Show(name);
-}
-
-private void dariusButton_Click(object sender, EventArgs e)
-{
-    name = "Darius";
-}
-
-private void carmenButton_Click(object sender, EventArgs e)
-{
-    name = "Carmen";
-}
-
-Explanation:
-The "name" field can be accessed by different methods in the "Form1" class.
+**Explanation:**  
+This example demonstrates how a field can be accessed and modified by multiple methods within the same class.
 
 ---
 
-27. The "Math" Class
+### 27. The Math Class
 
-"Math Class" (Week2/27_math_class.png)
+Week2/27_math_class.png
 
-Math.Sqrt(x);
-
-Math.Pow(x, y);
-
-Math.Max(x, y);
-
-Math.Min(x, y);
-
-Math.Round(x);
-
-Math.PI;
-
-Math.E;
-
-Explanation:
-The "Math" class provides methods and constants for mathematical calculations.
+**Explanation:**  
+The `Math` class provides methods and constants used for mathematical operations including square roots, powers, rounding, and mathematical constants such as `PI` and `E`.
 
 ---
 
-28. Changing Focus
+### 28. Changing Focus
 
-"Focus Method" (Week2/28_focus_method.png)
+Week2/28_focus_method.png
 
-ControlName.Focus();
-
-Example:
-
-private void clearButton_Click(object sender, EventArgs e)
-{
-    nameTextBox.Focus();
-}
-
-Explanation:
-"Focus()" gives keyboard focus to a control.
+**Explanation:**  
+The `Focus()` method sets keyboard focus to a specific control, allowing the user to interact with that control immediately.
 
 ---
 
-29. Keyboard Access Keys
+### 29. Keyboard Access Keys
 
-"Access Keys" (Week2/29_access_key.png)
+Week2/29_access_key.png
 
-Alt + X
-
-Explanation:
-An access key allows the user to access a control using "Alt" plus a designated letter.
+**Explanation:**  
+Access keys provide keyboard shortcuts that allow users to activate controls quickly by pressing the `Alt` key together with a designated character.
 
 ---
 
-30. Setting Colors
+### 30. Setting Colors
 
-"Colors" (Week2/30_colors.png)
+Week2/30_colors.png
 
-messageLabel.BackColor = Color.Black;
-
-messageLabel.ForeColor = Color.Yellow;
-
-Explanation:
-"BackColor" changes the background color. "ForeColor" changes the text color.
+**Explanation:**  
+The `BackColor` and `ForeColor` properties are used to customize the appearance of controls by changing background and text colors.
 
 ---
 
-31. GroupBoxes and Panels
+### 31. GroupBoxes and Panels
 
-"GroupBox and Panel" (Week2/31_groupbox_panel.png)
+Week2/31_groupbox_panel.png
 
-GroupBox
-Panel
-
-Explanation:
-Both controls can contain other controls. A GroupBox can display a title, while a Panel does not have a "Text" property.
+**Explanation:**  
+GroupBoxes and Panels are container controls used to organize related controls on a form. A GroupBox can display a title, while a Panel cannot.
 
 ---
 
-32. Breakpoints
+### 32. Breakpoints
 
-"Breakpoints" (Week2/32_breakpoints.png)
+Week2/32_breakpoints.png
 
-Breakpoint → Program pauses → Examine variables
-
-Explanation:
-A breakpoint pauses the program at a selected line so you can examine values while debugging.
+**Explanation:**  
+Breakpoints pause program execution at a selected line of code, allowing developers to inspect variables and program behavior during debugging.
 
 ---
 
-33. Locals and Watch Windows
+### 33. Locals and Watch Windows
 
-"Locals and Watch" (Week2/33_locals_watch.png)
+Week2/33_locals_watch.png
 
-Locals Window → variables in the current procedure
-
-Watch Window → variables selected by the programmer
-
-Explanation:
-The Locals window shows variables in the current procedure. The Watch window lets you monitor selected variables.
+**Explanation:**  
+The Locals window displays variables available in the current procedure, while the Watch window allows developers to monitor selected variables and expressions.
 
 ---
 
-34. Single-Stepping
+### 34. Single-Stepping
 
-"Single-Stepping" (Week2/34_single_stepping.png)
+Week2/34_single_stepping.png
 
-F11
-
-Explanation:
-Single-stepping executes the program one statement at a time. "F11" can be used to step into the code.
+**Explanation:**  
+Single-stepping executes one line of code at a time during debugging. This technique helps developers trace program execution and identify errors more efficiently.
