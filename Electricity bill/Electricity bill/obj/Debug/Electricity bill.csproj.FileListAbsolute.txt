@@ -1,0 +1,10 @@
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\bin\Debug\Electricity bill.exe.config
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\bin\Debug\Electricity bill.exe
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\bin\Debug\Electricity bill.pdb
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\obj\Debug\Electricity bill.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\obj\Debug\Electricity_bill.lbltaxamount.resources
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\obj\Debug\Electricity_bill.Properties.Resources.resources
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\obj\Debug\Electricity bill.csproj.GenerateResource.cache
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\obj\Debug\Electricity bill.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\obj\Debug\Electricity bill.exe
+C:\Users\hp\Documents\C#####\Electricity bill\Electricity bill\obj\Debug\Electricity bill.pdb
