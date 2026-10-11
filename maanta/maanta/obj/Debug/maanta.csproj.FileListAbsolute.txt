@@ -1,0 +1,11 @@
+C:\Users\hp\Documents\C#####\maanta\maanta\bin\Debug\maanta.exe.config
+C:\Users\hp\Documents\C#####\maanta\maanta\bin\Debug\maanta.exe
+C:\Users\hp\Documents\C#####\maanta\maanta\bin\Debug\maanta.pdb
+C:\Users\hp\Documents\C#####\maanta\maanta\obj\Debug\maanta.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\C#####\maanta\maanta\obj\Debug\maanta.Form1.resources
+C:\Users\hp\Documents\C#####\maanta\maanta\obj\Debug\maanta.Properties.Resources.resources
+C:\Users\hp\Documents\C#####\maanta\maanta\obj\Debug\maanta.csproj.GenerateResource.cache
+C:\Users\hp\Documents\C#####\maanta\maanta\obj\Debug\maanta.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\C#####\maanta\maanta\obj\Debug\maanta.exe
+C:\Users\hp\Documents\C#####\maanta\maanta\obj\Debug\maanta.pdb
+C:\Users\hp\Documents\C#####\maanta\maanta\obj\Debug\maanta.exe.config
