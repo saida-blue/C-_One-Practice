@@ -1,0 +1,11 @@
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\bin\Debug\delete-file-lesson.exe.config
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\bin\Debug\delete-file-lesson.exe
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\bin\Debug\delete-file-lesson.pdb
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\obj\Debug\delete-file-lesson.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\obj\Debug\delete_file_lesson.Form1.resources
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\obj\Debug\delete_file_lesson.Properties.Resources.resources
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\obj\Debug\delete-file-lesson.csproj.GenerateResource.cache
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\obj\Debug\delete-file-lesson.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\obj\Debug\delete-file-lesson.exe
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\obj\Debug\delete-file-lesson.pdb
+C:\Users\hp\Documents\C#####\delete-file-lesson\delete-file-lesson\obj\Debug\delete-file-lesson.exe.config
