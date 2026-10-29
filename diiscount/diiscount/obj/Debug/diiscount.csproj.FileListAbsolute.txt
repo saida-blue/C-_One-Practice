@@ -1,0 +1,11 @@
+C:\Users\hp\Documents\C#####\diiscount\diiscount\bin\Debug\diiscount.exe.config
+C:\Users\hp\Documents\C#####\diiscount\diiscount\bin\Debug\diiscount.exe
+C:\Users\hp\Documents\C#####\diiscount\diiscount\bin\Debug\diiscount.pdb
+C:\Users\hp\Documents\C#####\diiscount\diiscount\obj\Debug\diiscount.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\C#####\diiscount\diiscount\obj\Debug\diiscount.Form1.resources
+C:\Users\hp\Documents\C#####\diiscount\diiscount\obj\Debug\diiscount.Properties.Resources.resources
+C:\Users\hp\Documents\C#####\diiscount\diiscount\obj\Debug\diiscount.csproj.GenerateResource.cache
+C:\Users\hp\Documents\C#####\diiscount\diiscount\obj\Debug\diiscount.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\C#####\diiscount\diiscount\obj\Debug\diiscount.exe
+C:\Users\hp\Documents\C#####\diiscount\diiscount\obj\Debug\diiscount.pdb
+C:\Users\hp\Documents\C#####\diiscount\diiscount\obj\Debug\diiscount.exe.config
